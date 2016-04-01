@@ -1,0 +1,14 @@
+<h1>Convert a temperature</h1>
+
+<form action="/convert" method="POST">
+  <div>
+    <label for="temp-f">Temperature in &deg;F</label>
+    <input type="text" name="temp_f" id="temp-f" value="<%= @temp_f %>">
+  </div>
+  <input type="submit" value="Convert!">
+</form>
+
+<%#= "Temperature in &deg; C is: #{@temp_c}" if @temp_c %>
+<% if @temp_c %>
+  Temperature in &deg; C is: <%= @temp_c %>
+<% end %>
